@@ -13,10 +13,22 @@ public class PlayerControl : MonoBehaviour
     }
 
     // Update is called once per frame
+    public bool isOnGround = true;
+    public bool gameOver = false;
+
     void Update()
     {
-     if(Input.GetKeyDown(KeyCode.Space)){
+     if(Input.GetKeyDown(KeyCode.W) && isOnGround){
          PlayerRb.AddForce(Vector3.up * 100, ForceMode.Impulse);
+         isOnGround = false;
      }   
+    }
+    private void OnCollisionEnter(Collision collision){
+        if(collision.gameObject.CompareTag("Ground")){
+            isOnGround = true;
+        } else if(collision.gameObject.CompareTag("Obstacle")){
+            gameOver = true;
+            Debug.Log("Game Over!");
+        }
     }
 }
