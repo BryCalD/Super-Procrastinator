@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: -8717571551716364391}
   - component: {fileID: 8488455335860954080}
   - component: {fileID: -3420644848567599392}
+  - component: {fileID: 7845007145958156421}
+  - component: {fileID: 1162011510409627966}
   m_Layer: 0
   m_Name: rack
   m_TagString: Obstacle
@@ -30,8 +32,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7698902780805769119}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.99, y: 0, z: -0.85}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 10.997, y: 0.1925, z: -0.84061}
+  m_LocalScale: {x: 0.8554436, y: 0.8554436, z: 0.8554436}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -126,8 +128,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0838444, y: 2.7090993, z: 0.94341266}
-  m_Center: {x: -0.0649682, y: 1.3314292, z: 0.050101742}
+  m_Size: {x: 2.0838444, y: 2.2225935, z: 0.9434126}
+  m_Center: {x: -0.06496818, y: 1.5746943, z: 0.050101753}
 --- !u!54 &-3420644848567599392
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -142,5 +144,31 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!65 &7845007145958156421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698902780805769119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14696766, y: 2.7090993, z: 0.9434128}
+  m_Center: {x: -1.033403, y: 1.3314291, z: 0.050101753}
+--- !u!65 &1162011510409627966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698902780805769119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.105496556, y: 2.7090993, z: 0.9434128}
+  m_Center: {x: 0.9241996, y: 1.3314291, z: 0.050101753}
