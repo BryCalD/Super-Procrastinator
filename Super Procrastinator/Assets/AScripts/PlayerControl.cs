@@ -18,7 +18,7 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
      if(Input.GetKeyDown(KeyCode.W) && isOnGround){
-         PlayerRb.AddForce(Vector3.up * 100, ForceMode.Impulse);
+         PlayerRb.AddForce(Vector3.up * 200, ForceMode.Impulse);
          isOnGround = false;
      }   
     }
