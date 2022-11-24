@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/schoolscene.unity
     guid: 578d0ac2b6f6392468e320843e0da627
+  - enabled: 1
+    path: Assets/GameOver.unity
+    guid: 7d9283bcb971305409d85a199edf2ec7
   m_configObjects: {}
