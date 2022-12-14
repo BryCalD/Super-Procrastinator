@@ -19,7 +19,7 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnObstacle()
     {
-        int obsIndex = Random.Range(0, 5);
+        int obsIndex = Random.Range(0, 4);
 
         if(PlayerControl.gameOver == false)
             Instantiate(obsPrefab[obsIndex], spawnpos, obsPrefab[obsIndex].transform.rotation);

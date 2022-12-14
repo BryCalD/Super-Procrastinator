@@ -23,7 +23,12 @@ public class PlayerControl : MonoBehaviour
      if(Input.GetKeyDown(KeyCode.W) && isOnGround){
          PlayerRb.AddForce(Vector3.up * 200, ForceMode.Impulse);
          isOnGround = false;
-     }   
+     }
+
+     if(Input.GetKeyDown(KeyCode.S)){
+         PlayerRb.AddForce(Vector3.down * 200, ForceMode.Impulse);
+         isOnGround = false;
+     }      
     }
     public IEnumerator OnCollisionEnter(Collision collision){
         if(collision.gameObject.CompareTag("Ground")){

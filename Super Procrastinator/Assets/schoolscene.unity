@@ -153,12 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obsPrefab:
-  - {fileID: 3806717732005172159, guid: 6b651eac4c7477041909898aa5970098, type: 3}
   - {fileID: 7698902780805769119, guid: 398d967808445fc428effd220e089657, type: 3}
   - {fileID: 6697887568514587779, guid: 1a442a76b39f10c41b8539d419d92d23, type: 3}
   - {fileID: 976461239551461938, guid: e95196fb7412b014a86aade255f40bdc, type: 3}
   - {fileID: 6489405527418270028, guid: c67ed6a276375a648a7192c3cf685c73, type: 3}
-  - {fileID: 4511895388992966105, guid: cb79ede38d6f53b4dbedbb1d0581866e, type: 3}
 --- !u!4 &16360787
 Transform:
   m_ObjectHideFlags: 0
