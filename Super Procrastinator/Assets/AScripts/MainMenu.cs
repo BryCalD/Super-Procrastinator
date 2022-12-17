@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
      if (restart)
         {
             Time.timeScale = 1f;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(0);
             theScoreManager.scoreCount = 0;
             theScoreManager.scoreIncrease = true;
         }
