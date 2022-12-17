@@ -8,6 +8,8 @@ TagManager:
   - Obstacle
   - DeathOver
   - GameOver
+  - FxTemporaire
+  - Background
   layers:
   - Default
   - TransparentFX

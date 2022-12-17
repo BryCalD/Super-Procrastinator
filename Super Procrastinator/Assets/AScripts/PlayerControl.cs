@@ -32,6 +32,7 @@ public class PlayerControl : MonoBehaviour
      if(Input.GetKeyDown(KeyCode.W) && isOnGround){
         PlayerRb.AddForce(Vector3.up * 200, ForceMode.Impulse);
         playerAnim.SetBool("IsJumping", true);
+        isOnGround = false;
         dust.Stop();
      }
 
@@ -47,7 +48,7 @@ public class PlayerControl : MonoBehaviour
             playerAnim.SetBool("IsJumping", false);
             Createdust();
         }else if(collision.gameObject.CompareTag("Obstacle")){
-            playerAudio.PlayOneShot(Obs, 1.0f);
+            playerAudio.PlayOneShot(Obs, 0.5f);
         }else if(collision.gameObject.CompareTag("DeathOver")){
             gameOver = true;
             playerAudio.PlayOneShot(Caught, 1.0f);
@@ -61,5 +62,4 @@ public class PlayerControl : MonoBehaviour
     {
         dust.Play();
     }
-    
 }

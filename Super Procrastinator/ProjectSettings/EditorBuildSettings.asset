@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainManu.unity
     guid: 0bf136f2dfebd1c48a5ac3af4bf86b0f
   - enabled: 1
-    path: Assets/Scenes/schoolscene.unity
+    path: Assets/Scenes/level1.unity
     guid: 578d0ac2b6f6392468e320843e0da627
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
