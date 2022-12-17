@@ -18,7 +18,7 @@ public class MoveLeftPowerup : MonoBehaviour
     void Update()
     {
         if(PlayerControl.gameOver == false)
-            transform.Translate(Vector3.back * Time.deltaTime * speed);
+            transform.Translate(Vector3.right * Time.deltaTime * speed);
 
         if(transform.position.x < destroy && gameObject.CompareTag("Obstacle")){
             Destroy(gameObject);

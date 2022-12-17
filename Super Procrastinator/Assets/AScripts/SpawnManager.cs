@@ -6,14 +6,12 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] obsPrefab;
     private Vector3 spawnpos = new Vector3(-5, 0, 0);
-    private float startDelay = 2;
-    private float repeatRate = 2;
     private PlayerControl PlayerControl;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
+        InvokeRepeating("SpawnObstacle", (Random.Range(1.5f,4f)), (Random.Range(1.5f,4f)));
         PlayerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
     }
 

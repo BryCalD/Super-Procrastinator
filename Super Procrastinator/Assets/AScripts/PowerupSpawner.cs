@@ -17,7 +17,7 @@ public class PowerupSpawner : MonoBehaviour
 
     void SpawnPowerups()
     {
-        int powerIndex = Random.Range(0,0);
+        int powerIndex = Random.Range(0,2);
         Vector3 spawnPos = new Vector3(Random.Range(0, 10), Random.Range(1, 5), 0);
         if(PlayerControl.gameOver == false)
             Instantiate(powerup[powerIndex], spawnPos, powerup[powerIndex].transform.rotation);
