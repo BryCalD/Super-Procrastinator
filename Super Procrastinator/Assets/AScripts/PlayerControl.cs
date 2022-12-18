@@ -38,7 +38,6 @@ public class PlayerControl : MonoBehaviour
 
      if(Input.GetKeyDown(KeyCode.S)){
          PlayerRb.AddForce(Vector3.down * 250, ForceMode.Impulse);
-         isOnGround = false;
      }      
     }
 
@@ -54,7 +53,7 @@ public class PlayerControl : MonoBehaviour
             playerAudio.PlayOneShot(Caught, 1.0f);
             theScoreManager.scoreIncrease = false;
             yield return new WaitForSeconds(3f);
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 

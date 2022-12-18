@@ -12,9 +12,15 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    public void PlayGame()
+    public void PlayLevel1()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
+    }
+
+    public void PlayLevel2()
+    {
+        SceneManager.LoadScene(2);
         Time.timeScale = 1f;
     }
 
